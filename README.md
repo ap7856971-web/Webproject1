@@ -1,2 +1,118 @@
-# Webproject1
-Webproject1 Description
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0c0a09; /* Stone 950 */
+            color: #d6d3d1; /* Stone 300 */
+        }
+        .text-gradient {
+            background-image: linear-gradient(to right, #6d28d9, #9333ea, #c026d3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .link-hover:hover {
+            color: #9333ea;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Hero Section -->
+    <header class="min-h-screen flex items-center justify-center p-6 sm:p-12">
+        <div class="text-center max-w-4xl mx-auto">
+            <!-- Profile picture, using a placeholder image -->
+            <img src="https://placehold.co/150x150/1e1e1e/d6d3d1?text=AP" alt="Profile Picture" class="rounded-full mx-auto mb-6 border-4 border-stone-100">
+            <h1 class="text-5xl sm:text-7xl font-bold mb-4">
+                Hi, I'm <span class="text-gradient">Aditya PAl</span>
+            </h1>
+            <p class="text-lg sm:text-xl font-medium max-w-2xl mx-auto mb-8 text-stone-400">
+                A passionate software developer specializing in creating beautiful and functional web applications. Let's build something great together.
+            </p>
+            <nav class="flex justify-center space-x-4 sm:space-x-6 text-xl">
+                <a href="#about" class="link-hover transition duration-300 ease-in-out">About</a>
+                <a href="#projects" class="link-hover transition duration-300 ease-in-out">Projects</a>
+                <a href="#contact" class="link-hover transition duration-300 ease-in-out">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 sm:px-12 py-12">
+
+        <!-- About Section -->
+        <section id="about" class="py-16">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold mb-6 text-center text-stone-200">About Me</h2>
+                <p class="text-lg text-stone-400 leading-relaxed mb-4">
+                    I'm a self-taught developer with a love for clean code and elegant design. My journey began with a curiosity for how things work, and it quickly evolved into a passion for building robust and user-friendly digital experiences. I thrive on solving complex problems and am always eager to learn new technologies.
+                </p>
+                <p class="text-lg text-stone-400 leading-relaxed">
+                    When I'm not coding, you can find me exploring new hiking trails, reading science fiction novels, or experimenting with new recipes in the kitchen.
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16">
+            <h2 class="text-4xl font-bold mb-10 text-center text-stone-200">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-stone-800 rounded-lg p-6 shadow-xl transition transform hover:scale-105 duration-300 ease-in-out">
+                    <h3 class="text-xl font-bold mb-2 text-stone-100">Project Alpha</h3>
+                    <p class="text-stone-400 mb-4">A social media analytics dashboard built with React and D3.js, providing real-time data visualization.</p>
+                    <a href="#" class="text-purple-400 hover:text-purple-300 font-semibold">View Project &rarr;</a>
+                    <link rel="stylesheet" href="">
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-stone-800 rounded-lg p-6 shadow-xl transition transform hover:scale-105 duration-300 ease-in-out">
+                    <h3 class="text-xl font-bold mb-2 text-stone-100">Project Beta</h3>
+                    <p class="text-stone-400 mb-4">An e-commerce platform for handmade goods, featuring a custom shopping cart and payment integration.</p>
+                    <a href="#" class="text-purple-400 hover:text-purple-300 font-semibold">View Project &rarr;</a>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-stone-800 rounded-lg p-6 shadow-xl transition transform hover:scale-105 duration-300 ease-in-out">
+                    <h3 class="text-xl font-bold mb-2 text-stone-100">Project Gamma</h3>
+                    <p class="text-stone-400 mb-4">A mobile-first recipe discovery app that uses a machine learning model to suggest meals based on dietary preferences.</p>
+                    <a href="#" class="text-purple-400 hover:text-purple-300 font-semibold">View Project &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16">
+            <div class="max-w-xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-6 text-stone-200">Get in Touch</h2>
+                <p class="text-lg text-stone-400 mb-8">
+                    I'm currently open to new opportunities. Whether you have a project in mind or just want to say hi, feel free to reach out!
+                </p>
+                <div class="flex justify-center space-x-6">
+                    <!-- Email icon and link -->
+                    <a href="mailto:your.email@example.com" class="bg-stone-700 p-4 rounded-full text-stone-300 hover:bg-stone-600 transition-colors duration-300 link-hover">
+                        <svg xmlns="https://myaccount.google.com/personal-info?gar=WzEyMF0&hl=en_GB&utm_source=OGB&utm_medium=act" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </a>
+                    <!-- LinkedIn icon and link -->
+                    <a href="" target="_blank" class="bg-stone-700 p-4 rounded-full text-stone-300 hover:bg-stone-600 transition-colors duration-300 link-hover">
+                        <svg xmlns="www.linkedin.com/in/aditya-pal-1aba06367" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <!-- GitHub icon and link -->
+                    <a href="https://github.com/yourprofile" target="_blank" class="bg-stone-700 p-4 rounded-full text-stone-300 hover:bg-stone-600 transition-colors duration-300 link-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3.2-1 6.5-1.6 6.5-7A5.5 5.5 0 0 0 15 3a5.7 5.7 0 0 0-1.7 4.5l-2.4 2.4A9.8 9.8 0 0 0 8 11.2V14.5A4.5 4.5 0 0 0 4.5 19H17a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8v3z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-6 text-stone-500 text-sm">
+        <p>&copy; 2024 Jane P. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
